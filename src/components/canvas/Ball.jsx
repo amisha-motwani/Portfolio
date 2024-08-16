@@ -63,7 +63,7 @@ const Ball = ({ imgUrl }) => {
   return (
     <>
       <div className="flex justify-center items-center w-full h-full relative">
-        <div className="flex justify-center items-center rounded-full relative md:w-[100px]  md:h-[100px] w-[80px] h-[80px] bg-[#000000] overflow-hidden  border border-gray-300 shadow-lg">
+        <div className="flex justify-center items-center rounded-full relative md:w-[100px] md:h-[100px] w-[80px] h-[80px] bg-[#000000] overflow-hidden  border border-gray-300 shadow-lg">
           <img
             src={imgUrl}
             alt="Ball Decal"
@@ -79,7 +79,7 @@ const BallCanvas = ({ icon }) => {
   return (
     <>
       <div
-        className="flex justify-center items-center mg:w-[200px] md:h-[200px] w-[180px] h-[180px] rounded-full shadow-md"
+        className="flex justify-center items-center mg:w-[200px] md:h-[185px] w-[180px] h-[180px] rounded-full shadow-md"
         style={{
           backgroundImage:
             "radial-gradient(circle at center, #010914 0, #cfe8fd, #002460 100%)",

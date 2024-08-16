@@ -5,6 +5,8 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const formRef = useRef();
@@ -32,8 +34,8 @@ const Contact = () => {
 
     emailjs
       .send(
+        'service_4esw8rk',  // Correct order of service and template IDs
         'template_asrgrq9',
-        'service_4esw8rk',
         {
           from_name: form.name,
           to_name: "Amisha Motwani",
@@ -41,12 +43,13 @@ const Contact = () => {
           to_email: "er.amishamotwani@gmail.com",
           message: form.message,
         },
-        '-TT6VLSqnsC7HwhT_'
+        '-TT6VLSqnsC7HwhT_'  // Correct Public Key
       )
-      .then(  
+      .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+          toast.success("Thank you. I will get back to you as soon as possible.");
+          // alert("Thank you. I will get back to you as soon as possible.");
 
           setForm({
             name: "",
@@ -56,13 +59,12 @@ const Contact = () => {
         },
         (error) => {
           setLoading(false);
-          console.error(error);
-
-          alert("Ahh, something went wrong. Please try again.");
+          console.error('EmailJS Error:', error);
+          toast.error("Ahh, something went wrong. Please try again.");
+          // alert("Ahh, something went wrong. Please try again.");
         }
       );
   };
-
   return (
     <div
       className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
