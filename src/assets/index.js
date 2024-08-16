@@ -26,8 +26,8 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
-import Robotronixicon from "./company/Robotronixicon.jpeg";
-import Techicon from "./company/Techicon.png";
+import Robotronixicon from "./company/Robotronixicon.png";
+// import Techicon from "./company/Techicon.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -36,8 +36,8 @@ import tripguide from "./tripguide.png";
 import CRUD from "./CRUD.png";
 import Formjs from "./Formjs.png";
 import Todoreact from "./Todoreact.png";
-
-
+import ALogo from "./ALogo.png";
+import ProgrammerGirl from "./ProgrammerGirl.png";
 
 export {
   logo,
@@ -57,20 +57,19 @@ export {
   mongodb,
   nodejs,
   reactjs,
+  ALogo,
   redux,
   tailwind,
   typescript,
   threejs,
   arduino,
-  Techicon,
-  
+  // Techicon,
   meta,
   shopify,
   starbucks,
+  ProgrammerGirl,
   tesla,
   Robotronixicon,
-  
-
   carrent,
   jobit,
   tripguide,

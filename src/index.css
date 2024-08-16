@@ -223,3 +223,20 @@
       -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
   }
 }
+
+/* ---------------Animation Code -------------------- */
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); /* Adjust the value to change the distance */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-moveUpDown {
+  animation: moveUpDown 3s ease-in-out infinite;
+}
